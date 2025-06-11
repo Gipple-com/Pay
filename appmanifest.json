@@ -1,0 +1,18 @@
+{
+	"name": "Gipple Pay",
+	"short_name": "Gipple Pay",
+	"description": "Gipple Pay / Gipple",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/Иконка-16.png",
+			"sizes": "2828x2828",
+			"type": "image/png"
+		}
+	],
+	"screenshots": [],
+	"theme_color": "#ffffff"
+}
