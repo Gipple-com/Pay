@@ -1415,9 +1415,15 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject();
 		},
+		() => 8,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => and(f0("usd"), "$");
+			return () => (and("Balance: ", f0("usd")) + "$");
+		},
+		() => 31,
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => (and("Balance: ", f0("gift_usd")) + "$");
 		},
 		() => "",
 		() => 0,
@@ -1433,13 +1439,39 @@ self.C3_ExpressionFuncs = [
 			return () => (("Здраствуйте, " + f0()) + "!");
 		},
 		() => 19,
+		() => 13,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0("secretCode");
 		},
 		() => "Скопировано",
 		() => "Секрет-код",
-		() => 2
+		() => -503607063258111,
+		() => -717750023016447,
+		() => 2,
+		() => "gift_usd",
+		() => "usd",
+		p => {
+			const n0 = p._GetNode(0);
+			return () => ("-" + n0.ExpObject());
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => and(f0("usd"), "$");
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => (and("Gift Balance: ", f0("gift_usd")) + "$");
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0("gift_usd");
+		},
+		() => "text-align",
+		() => "center",
+		() => "#8b0000",
+		() => "1px solid #8b0000",
+		() => "0"
 ];
 
 

@@ -27,6 +27,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Eponesh_GameScore.Acts.PlayerSync,
 		C3.Plugins.Eponesh_GameScore.Acts.PlayerLogin,
 		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.Text.Cnds.PickByUID,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.Eponesh_GameScore.Exps.PlayerGet,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
@@ -36,11 +37,14 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Pin.Acts.PinByProperties,
 		C3.Plugins.Eponesh_GameScore.Exps.PlayerID,
 		C3.Plugins.Eponesh_GameScore.Exps.PlayerName,
-		C3.Plugins.Text.Cnds.PickByUID,
 		C3.Plugins.Clipboard.Acts.CopyText,
 		C3.Plugins.Text.Exps.Text,
 		C3.Plugins.Clipboard.Cnds.OnCopySuccess,
-		C3.Plugins.Button.Acts.SetText
+		C3.Plugins.Button.Acts.SetText,
+		C3.Plugins.TiledBg.Acts.SetDefaultColor,
+		C3.Plugins.Eponesh_GameScore.Acts.PlayerAdd,
+		C3.Plugins.TextBox.Acts.SetText,
+		C3.Plugins.TextBox.Cnds.CompareText
 	];
 };
 self.C3_JsPropNameTable = [
@@ -67,7 +71,17 @@ self.C3_JsPropNameTable = [
 	{Info_Button2: 0},
 	{Loading_gid: 0},
 	{Close_Info: 0},
-	{HTMLЭлемент: 0}
+	{HTMLЭлемент: 0},
+	{Cart_Debit: 0},
+	{Cart_Gift: 0},
+	{ТайловыйФон: 0},
+	{Обменять: 0},
+	{Gift: 0},
+	{Balance_Button: 0},
+	{Click_GiftCart_Obmen: 0},
+	{icons8стрелка: 0},
+	{Gift2: 0},
+	{Close_Obmen: 0}
 ];
 
 self.InstanceType = {
@@ -91,5 +105,15 @@ self.InstanceType = {
 	Info_Button2: class extends self.IButtonInstance {},
 	Loading_gid: class extends self.ISpriteInstance {},
 	Close_Info: class extends self.ISpriteInstance {},
-	HTMLЭлемент: class extends self.IHTMLElementInstance {}
+	HTMLЭлемент: class extends self.IHTMLElementInstance {},
+	Cart_Debit: class extends self.ISpriteInstance {},
+	Cart_Gift: class extends self.ISpriteInstance {},
+	ТайловыйФон: class extends self.ITiledBackgroundInstance {},
+	Обменять: class extends self.IButtonInstance {},
+	Gift: class extends self.ITextInputInstance {},
+	Balance_Button: class extends self.ITextInputInstance {},
+	Click_GiftCart_Obmen: class extends self.ITiledBackgroundInstance {},
+	icons8стрелка: class extends self.ISpriteInstance {},
+	Gift2: class extends self.ITextInputInstance {},
+	Close_Obmen: class extends self.ISpriteInstance {}
 }
