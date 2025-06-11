@@ -32,6 +32,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Behaviors.Anchor.Acts.SetEnabled,
 		C3.Behaviors.Tween.Acts.TweenOneProperty,
+		C3.Plugins.TiledBg.Acts.SetPos,
 		C3.Behaviors.Pin.Acts.PinByProperties,
 		C3.Plugins.Eponesh_GameScore.Exps.PlayerID,
 		C3.Plugins.Eponesh_GameScore.Exps.PlayerName,
